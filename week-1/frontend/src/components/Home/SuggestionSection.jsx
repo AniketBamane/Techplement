@@ -1,6 +1,7 @@
 import React from 'react';
 import { useMyContext } from '../../context/context';
 import toast from 'react-hot-toast';
+import Loading from '../Loading';
 
 const SuggestionSection = ({ quotes, inside, setFavourites }) => {
   const { token } = useMyContext();
@@ -74,7 +75,7 @@ const SuggestionSection = ({ quotes, inside, setFavourites }) => {
   };
 
   if (quotes.length === 0) {
-    return <center>{inside === "Quotes" ? "search quotes by author name ." : inside === "Home" ? "Loading quotes ..." : "No quotes available."}</center>;
+    return <center>{inside === "Quotes" ? "search quotes by author name ." : inside === "Home" ? <Loading />: "No quotes available."}</center>;
   }
 
   return (

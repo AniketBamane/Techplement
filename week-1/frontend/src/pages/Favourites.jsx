@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import SuggestionSection from '../components/Home/SuggestionSection'
 import { useMyContext } from '../context/context'
 import toast from 'react-hot-toast'
+import Loading from '../components/Loading'
 
 const Favourites = () => {
   const {token} = useMyContext()
@@ -48,7 +49,7 @@ const Favourites = () => {
     fetchAllFavourites()
   },[])
   if(loading){
-    return <h1>Loading...</h1>
+    return <Loading />
   }
   return (
     <SuggestionSection quotes={favourites} inside={"favourites"} setFavourites={setFavourites} />

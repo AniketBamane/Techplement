@@ -24,7 +24,7 @@ const HeroSection = () => {
   return (
     <div className="h-screen max-h-96 flex flex-col items-center justify-center bg-gradient-to-br from-green-600 to-green-200 shadow-lg shadow-stone-400 mt-2 rounded-md">
       {loading ? (
-        <h1 className="text-white text-2xl md:text-3xl lg:text-4xl">Loading...</h1>
+        <h1 className="text-white text-2xl md:text-3xl lg:text-4xl">Getting new Quote...</h1>
       ) : (
         <div className="text-center text-white p-8">
           <p className="text-lg md:text-xl lg:text-2xl font-bold mb-4">
