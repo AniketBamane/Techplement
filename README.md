@@ -1,4 +1,4 @@
-Quote of the Day Website
+<h1>Quote of the Day Website</h1>
 Overview
 This is a simple Quote of the Day website that allows users to view random quotes, search for quotes by author name, and register and log in. The project is built with a full-stack approach using modern technologies and deployed on reliable platforms.
 
