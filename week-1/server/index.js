@@ -1,6 +1,7 @@
 require("dotenv").config()
 const connectToDb = require("./DbConfig/db")
 const express = require('express');
+const cors = require('cors')
 //routers 
 const authRouter = require("./Router/authRouter")
 const quoteRouter = require("./Router/qouteRouter")
@@ -8,7 +9,7 @@ const quoteRouter = require("./Router/qouteRouter")
 const errorMiddleware = require("./Middleware/errorMiddleware")
 const app = express();
 app.use(express.json())
-
+app.use(cors())
 
 app.use("/api/auth", authRouter)
 app.use("/api/quote", quoteRouter)

@@ -6,7 +6,7 @@ const router = express.Router()
 
 router.route("/signup").post(validator(validationSchema.signUpSchema),controller.signUp)
 
-router.route("/verify-email").get(controller.verifyEmail)
+router.route("/verify-email").post(controller.verifyEmail)
 
 router.route("/signin").post(validator(validationSchema.signInSchema),controller.signIn)
 
