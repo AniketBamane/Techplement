@@ -7,7 +7,7 @@ const SuggestionSection = ({ quotes, inside, setFavourites }) => {
 
   const addQuoteToFavourites = async (quoteid) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/quote/addquotetofavourites`, {
+      const response = await fetch(`${import.meta.env.VITE_BASE_URL}/api/quote/addquotetofavourites`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,7 +40,7 @@ const SuggestionSection = ({ quotes, inside, setFavourites }) => {
 
   const removeQuoteFromFavourites = async (quoteid) => {
     try {
-      const response = await fetch(`http://localhost:3000/api/quote/removequotetofavourites/${quoteid}`, {
+      const response = await fetch(`${import.meta.env.VITE_BASE_URL}/api/quote/removequotetofavourites/${quoteid}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
