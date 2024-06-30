@@ -16,14 +16,12 @@ function App() {
     <BrowserRouter>
           <Toaster position="top-right" reverseOrder={false} />
       <Routes>
-        {/* Auth Layout Routes */}
         <Route element={<AuthLayout />}>
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
           <Route path="/verification" element={<Verfication />} />
         </Route>
         
-        {/* Main Layout Routes */}
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
           <Route path="quotes" element={<Quotes />} />

@@ -62,7 +62,6 @@ const SignIn = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
       <div className="flex flex-col md:flex-row w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
-        {/* Left Container: Quote */}
         <div className="hidden md:block md:w-1/2 w-full relative bg-gradient-to-bl from-green-400 via-green-200 to-transparent flex items-center justify-center p-4 md:p-0">
           <div className="absolute bottom-10 left-10 right-10 md:right-2 text-center md:text-left">
             <p className="text-xl text-gray-800 italic">"Success is not final, failure is not fatal: It is the courage to continue that counts."</p>
@@ -70,7 +69,6 @@ const SignIn = () => {
           </div>
         </div>
         
-        {/* Right Container: Sign In Form */}
         <div className="md:w-1/2 w-full p-8">
           <h2 className="text-2xl font-semibold text-gray-700 mb-6 text-center md:text-left">Sign In</h2>
           <form onSubmit={handleSubmit}>

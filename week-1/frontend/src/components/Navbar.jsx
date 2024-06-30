@@ -28,26 +28,20 @@ const Navbar = () => {
     <>
       <nav className="px-4 bg-white sticky top-0 z-10">
         <div className="flex justify-between">
-          {/* Left part of Navbar */}
           <div className="flex space-x-4">
             <div>
               <NavLink to="/" className="flex items-center py-5 px-2 text-gray-700 hover:text-green-500">
                 <span className="font-bold text-xl">QuoteMaster</span>
               </NavLink>
             </div>
-            {/* Primary Nav Items */}
             <div className="hidden md:flex items-center space-x-1">
               <NavLink to="/quotes" className="py-5 px-3 text-gray-700 hover:text-green-500">All Quotes</NavLink>
               <NavLink to="/favourites" className="py-5 px-3 text-gray-700 hover:text-green-500">Favourites</NavLink>
             </div>
           </div>
-
-          {/* Right part of Navbar */}
           <div className="hidden md:flex items-center space-x-1">
             <button onClick={handleLogout} className="block py-2 px-4 text-gray-700 hover:bg-gray-200">Logout</button>
           </div>
-
-          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button className="mobile-menu-button" onClick={toggleDrawer}>
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -57,8 +51,6 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
-
-      {/* Mobile Drawer Menu */}
       <div className={`fixed inset-0 bg-gray-800 bg-opacity-50 z-20  ${drawerOpen ? 'block' : 'hidden'}`} onClick={toggleDrawer}>
         <div className="fixed inset-y-0 left-0 w-64 bg-white p-4 shadow-lg z-30" onClick={(e) => e.stopPropagation()}>
           <div className="flex justify-between mb-4">

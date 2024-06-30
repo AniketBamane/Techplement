@@ -59,8 +59,6 @@ const SignUp = () => {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100">
       <div className="flex flex-col md:flex-row w-full max-w-4xl bg-white shadow-lg rounded-lg overflow-hidden">
-        
-        {/* Left Container: Sign Up Form */}
         <div className="w-full md:w-1/2 p-8">
           <h2 className="text-2xl font-semibold text-gray-700 mb-6">Sign Up</h2>
           <form onSubmit={handleSubmit}>
@@ -118,8 +116,6 @@ const SignUp = () => {
             </div>
           </form>
         </div>
-
-        {/* Right Container: Quote */}
         <div className="hidden md:block md:w-1/2 w-full relative bg-gradient-to-br from-green-400 via-green-200 to-transparent flex items-center justify-center p-4">
           <div className="absolute bottom-10 left-10">
             <p className="text-xl text-gray-800 italic">"The only limit to our realization of tomorrow is our doubts of today."</p>
